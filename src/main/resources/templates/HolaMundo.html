@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <script>
+        function mostrarMensaje(){
+            alert("Mensaje desde SpringBoot!")
+        }
+    </script>
+</head>
+<body>
+    <h1 th:text="${mensaje}">Error al recibir el contenido</h1>
+    
+    <button onclick="mostrarMensaje()">Hazme click!</button>
+
+
+    <h2>Lista de Datos</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ana</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Juan</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>María</td>
+                <td>28</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
